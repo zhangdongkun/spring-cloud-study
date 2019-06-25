@@ -1,18 +1,17 @@
-package com.zdk.hellospringcloudserviceadmin;
+package com.zdk.bootstrap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 @ComponentScan("com.zdk")
-public class HelloSpringCloudServiceAdminApplication {
+public class HelloSpringCloudWebAdminRibbonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloSpringCloudServiceAdminApplication.class, args);
+        SpringApplication.run(HelloSpringCloudWebAdminRibbonApplication.class, args);
     }
 
 }
