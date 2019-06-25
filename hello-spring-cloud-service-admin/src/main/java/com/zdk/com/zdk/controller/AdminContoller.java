@@ -18,8 +18,8 @@ public class AdminContoller {
     @GetMapping("/hello")
     //加了 RequestParam 不传name 会 400
     //不加 RequestParam 随便传不会报错
-    public  String sayHello(@RequestParam(value = "name") String name){
-        return  String.format("hello  %s,this is %s",name,port) ;
+    public  String sayHello( String name){
+        return  String.format("hello  %s,this is ------------------%s",name,port) ;
 
 
     }
